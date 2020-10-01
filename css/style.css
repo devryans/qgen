@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #4B0082;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(rgba(197, 108, 240,.94), rgba(113, 88, 226,.92)), url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(197, 108, 240,.8);
+    box-shadow: 0 20px 20px 10px rgba(148,0,211, 0.459);
+}
+
+.quote-text {
+    font-size: 2.60rem;
+}
+
+.long-quote {
+    font-size: 1.9rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    opacity: .8;
+}
+
+/*Button Style*/
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background: #4B0082;
+    outline: none;
+    padding: .5rem 1.8rem;
+    box-shadow: 0 0.4rem rgba(75,0,130, 0.25);
+}
+
+button:hover {
+    filter: brightness(130%);
+}
+
+button:active {
+    transform: translate(0, 0.4rem);
+    box-shadow: 0 0.1rem rgba(75,0,130, 0.65);
+}
+
+.twitter-button, .new-quote {
+    font-size: 1.3rem;
+}
+
+.new-quote {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.loader {
+  border: 32px solid #f3f3f3;
+  border-top: 32px solid #4B0082;
+  border-bottom: 32px solid #4B0082;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*Media Queary: Tablet or Smaller*/
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 40px;
+    }
+    
+    .quote-text {
+        font-size: 2.5rem;
+    }
+    
+    .twitter-button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+    
+    .quote-text {
+        font-size: 1.5rem;
+    }
+    
+    .twitter-button, .new-quote {
+        font-size: .8rem;
+    }
+    
+    .fa-quote-left {
+        font-size: 2rem;
+    }
+    
+    .quote-author {
+        margin-top: 10px;
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    
+    button {
+        font-size: .8rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .quote-container {
+        margin: auto 0px;
+    }
+}
+
